@@ -1,0 +1,106 @@
+.header
+    color: $bayOfMany
+    display: flex
+    justify-content: space-between
+    align-items: flex-end
+    color: $bayOfMany
+    &-wrapper
+        padding: 35px 0 65px 0
+    &-nav
+        font-size: 16px
+        &__list
+            display: flex
+            list-style: none
+            &-item
+                margin-right: 30px
+                position: relative
+                &:last-child
+                    margin-right: 0
+                &__link
+                    color: $bayOfMany
+                &_dropdown
+                    position: relative
+                    cursor: pointer
+                    &__link
+                        transition: .3s all
+                        display: flex
+                        align-items: center
+                        &-img
+                            transition: .3s all
+                            width: 8px
+                            height: 5px
+                            margin-left: 5px
+                            margin-bottom: -2px
+                            fill: $bayOfMany
+                        &-text
+                            transition: .3s all
+                            color: $bayOfMany
+                    &__menu
+                        display: none
+                        position: absolute
+                        left: 0
+                        top: 0
+                        padding-top: 40px
+                        &-content
+                            box-shadow: 0 15px 24px rgba(48, 39, 131, 0.5)
+                            background-color: $white
+                            padding: 30px 30px
+                            min-width: 290px
+                            list-style-type: none
+                            &__item
+                                transition: all .3s
+                                margin-bottom: 20px
+                                position: relative
+                                &-link
+                                    transition: .3s all
+                                    color: $bayOfMany
+                                &:last-child
+                                    margin-bottom: 0
+                                &::before
+                                    transition: all .3s ease-in-out
+                                    position: absolute
+                                    display: block
+                                    content: ''
+                                    height: 4px
+                                    width: 0
+                                    background-color: $turbo
+                                    left: 0
+                                    top: 50%
+                                    transform: translateY(-50%) translateX(-100%)
+                                &:hover
+                                    transition: all .3s 
+                                    margin-left: 10px
+                                    &::before
+                                        transform: translateY(-50%) translateX(-133%)
+                                        transition: all .3s ease-in-out
+                                        width: 30px
+                                    .header-nav__list-item_dropdown__menu-content__item-link
+                                        transition: .3s all
+                                        color: $mariner
+
+                &::before
+                    transition: all .3s ease-in-out
+                    position: absolute
+                    display: block
+                    content: ''
+                    height: 4px
+                    width: 0
+                    left: 0
+                    bottom: -7px
+                    background: $turbo
+                &:hover
+                    .header-nav__list-item__link
+                        transition: .3s all
+                        color: $mariner
+                    .header-nav__list-item_dropdown__link-text
+                        color: $mariner 
+                    .header-nav__list-item_dropdown__link-img
+                        fill: $mariner
+                    &::before
+                        transition: all .3s ease-in-out
+                        width: 100%
+                    .header-nav__list-item_dropdown__menu
+                        display: block
+    &-phone
+        font-size: 22px
+        color: $bayOfMany
