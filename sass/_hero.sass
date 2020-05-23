@@ -1,0 +1,79 @@
+.hero
+    &-slider
+        position: relative
+        &__item
+            width: 100%
+            background: url('../img/hero/slider_bg.png') no-repeat
+            position: relative
+            max-height: 420px
+            &-heading
+                padding: 150px 0px 140px 60px
+                font-size: 42px
+                color: $white
+                font-weight: 400
+                &_big
+                    text-transform: uppercase
+                    font-size: 77px
+                    display: block
+            &-price
+                position: absolute
+                right: 0
+                top: 27px
+                color: $white
+                padding: 20px 20px 15px 20px
+                background: $red
+                border-radius: 10px 0 0 10px
+                font-size: 42px
+                font-weight: 400
+                letter-spacing: -0.99px
+        &__arrow
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+            background: $white
+            width: 23px
+            height: 46px
+            z-index: 1
+            cursor: pointer
+            &::before
+                position: absolute
+                display: block
+                content: ''
+                width: 9px
+                height: 15px
+                top: 50%
+                transform: translateY(-50%)
+            &_right
+                right: 0
+                border-radius: 100% 0 0 100% / 50% 0 0 50%
+                &::before
+                    right: 0
+                    background: url('../img/hero/slider-arrow_right.png')
+            &_left
+                left: 0
+                border-radius: 0 100% 100% 0 / 0 50% 50% 0
+                &::before
+                    left: 0
+                    background: url('../img/hero/slider-arrow_left.png')
+        &__dots
+            .slick-dots
+                display: flex !important
+                justify-content: center
+                list-style-type: none
+                margin-top: 20px
+                li
+                    margin-right: 10px
+                    &:last-child
+                        margin-right: 0
+                    button
+                        width: 12px
+                        height: 12px
+                        border: none
+                        border-radius: 100%
+                        background: $black
+                        opacity: 0.2
+                        cursor: pointer
+                .slick-active
+                    button
+                        background: $bayOfMany
+                        opacity: 1
