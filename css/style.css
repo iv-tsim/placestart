@@ -31,7 +31,7 @@ a {
   height: 100%;
   width: 100%;
   font-family: "Museo Sans Cyrl";
-  font-weight: 700;
+  font-weight: 400;
   background-color: #ffffff;
 }
 
@@ -45,6 +45,17 @@ a {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
+}
+
+.section {
+  padding: 100px 0;
+}
+
+.section-title {
+  color: #302783;
+  font-size: 56px;
+  font-weight: 400;
+  margin-bottom: 60px;
 }
 
 .header {
@@ -126,8 +137,8 @@ a {
   display: none;
   position: absolute;
   left: 0;
-  top: 0;
-  padding-top: 40px;
+  top: 20px;
+  padding-top: 20px;
   z-index: 1;
 }
 
