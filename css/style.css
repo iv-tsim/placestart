@@ -359,6 +359,10 @@ a {
   opacity: 1;
 }
 
+.goods {
+  padding-bottom: 20px;
+}
+
 .goods-items__block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -366,8 +370,8 @@ a {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  margin-bottom: 80px;
   position: relative;
+  margin-bottom: 80px;
 }
 
 .goods-items__block::before {
