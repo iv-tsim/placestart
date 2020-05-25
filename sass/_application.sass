@@ -1,0 +1,76 @@
+.application
+    background: url('../img/application/bg.png') center no-repeat
+    &-title
+        color: $white
+        margin: 0
+        font-size: 66px
+    &-form
+        &__input
+            min-width: 320px
+            width: 100%
+            padding-top: 23px
+            padding-bottom: 23px
+            padding-left: 20px
+            border: none
+            border-radius: 5px
+            margin-bottom: 10px
+            &::-webkit-input-placeholder
+                font-size: 18px
+                color: $bayOfMany
+        &__checkbox
+            display: block
+            margin-top: 5px
+            margin-bottom: 15px
+            position: relative
+            cursor: pointer
+            &-input
+                position: absolute
+                z-index: -10
+                opacity: 0
+                &:checked ~ .application-form__checkbox-text::after
+                    display: block
+            &-text
+                position: relative
+                padding-left: 30px
+                font-size: 13px
+                color: $bayOfMany
+                &::before
+                    position: absolute
+                    display: block
+                    content: ''
+                    top: 50%
+                    left: 0
+                    width: 20px
+                    height: 20px
+                    background: $white
+                    border-radius: 3px
+                    transform: translateY(-50%)
+                &::after
+                    position: absolute
+                    display: none
+                    content: ''
+                    left: 7px
+                    top: 1px
+                    width: 7px
+                    height: 12px
+                    border: solid $black
+                    border-width: 0 3px 3px 0
+                    transform: rotate(45deg)
+                    border-radius: 2px
+                a
+                    color: $bayOfMany
+                    text-decoration: underline !important
+        &__btn
+            border-radius: 5px
+            border: 2px solid $bayOfMany
+            width: 100%
+            background: transparent
+            padding: 20px 0
+            font-size: 18px
+            color: $bayOfMany
+            cursor: pointer
+            transition: .3s all
+            &:hover
+                transition: .3s all
+                background: $bayOfMany
+                color: $white

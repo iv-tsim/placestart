@@ -5,6 +5,7 @@ $(document).ready(function(){
     infinity: true,
     slidesToShow: 1,
     slidesToScroll: 1,
+    autoplay: true,
     prevArrow: '<div class="hero-slider__arrow hero-slider__arrow_left"></div>',
     nextArrow: '<div class="hero-slider__arrow hero-slider__arrow_right"></div>',
     appendDots: $('.hero-slider__dots')
