@@ -1,0 +1,48 @@
+.description
+    color: $bayOfMany
+    &-title
+        font-size: 36px
+        font-weight: 700
+        margin-bottom: 20px
+        max-width: 450px
+    &-text
+        max-height: 250px
+        overflow: auto
+        padding-right: 35px
+        &::-webkit-scrollbar
+            width: 5px
+            &-track
+                background: $mercury
+                border-left: 2px solid $white
+                border-right: 2px solid $white
+            &-thumb
+                background: $turbo
+                width: 5px
+                border-radius: 2px
+        p
+            margin-bottom: 10px
+    &-img
+        text-align: center
+        position: relative
+        &::after
+            z-index: -2
+            position: absolute
+            display: block
+            content: ''
+            left: 0
+            top: 50%
+            transform: translateY(-50%)
+            background: $turbo
+            width: 600px
+            height: 290px
+        &::before
+            z-index: -1
+            position: absolute
+            display: block
+            content: ''
+            left: 50%
+            top: 50%
+            transform: translateY(-50%) translateX(-50%)
+            background: $bayOfMany
+            width: 350px
+            height: 290px
