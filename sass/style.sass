@@ -45,6 +45,20 @@ input[type=number]::-webkit-outer-spin-button
         font-size: 56px
         font-weight: 400
         margin-bottom: 60px
+.overlay
+    cursor: pointer
+    visibility: hidden
+    opacity: 0
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 102%
+    background: $cloudBurst
+    z-index: 2
+    &_active
+        visibility: visible
+        opacity: .9
 
 @import _header.sass
 @import _hero.sass
@@ -55,3 +69,4 @@ input[type=number]::-webkit-outer-spin-button
 @import _description.sass
 @import _footer.sass
 @import _feedback.sass
+@import _modal.sass

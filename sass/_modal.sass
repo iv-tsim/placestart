@@ -1,10 +1,29 @@
-.application
-    background: url('../img/application/bg.png') center no-repeat
-    padding: 130px 0
+.modal
+    max-width: 370px
+    position: absolute
+    background: $turbo
+    padding: 40px 25px 25px 25px
+    z-index: 3
+    top: 190px
+    left: 50%
+    transform: translateX(-50%)
+    visibility: hidden
+    opacity: 0
+    &_active
+        visibility: visible
+        opacity: 1
+    &-close
+        position: absolute
+        top: 10px
+        right: 10px
+        color: $bayOfMany
+        cursor: pointer
+        font-size: 22px
     &-title
-        color: $white
-        margin: 0
-        font-size: 66px
+        text-align: center
+        color: $bayOfMany
+        font-size: 36px
+        margin-bottom: 30px
     &-form
         &__input
             min-width: 320px
@@ -28,7 +47,7 @@
                 position: absolute
                 z-index: -10
                 opacity: 0
-                &:checked ~ .application-form__checkbox-text::after
+                &:checked ~ .modal-form__checkbox-text::after
                     display: block
             &-text
                 position: relative
