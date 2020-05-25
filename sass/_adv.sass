@@ -1,0 +1,27 @@
+.adv
+    &-block
+        background: url('../img/adv/adv.png') center no-repeat
+        padding: 35px 0px 55px 55px
+        &__title
+            color: $white
+            margin-bottom: 30px
+        &__list
+            color: $white
+            list-style-type: none
+            font-size: 18px
+            margin-left: 47px
+            &-item
+                margin-bottom: 10px
+                position: relative
+                &:last-child
+                    margin-bottom: 0
+                &::before
+                    position: absolute
+                    display: block
+                    content: ''
+                    background: url('../img/adv/check.png')
+                    width: 17px
+                    height: 15px
+                    top: 50%
+                    left: -26px
+                    transform: translateX(-100%) translateY(-50%)
