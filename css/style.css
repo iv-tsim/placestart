@@ -444,4 +444,39 @@ a {
   -webkit-transform: translateX(-100%) translateY(-50%);
           transform: translateX(-100%) translateY(-50%);
 }
+
+.services-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: relative;
+  margin-bottom: 80px;
+}
+
+.services-block::before {
+  position: absolute;
+  top: -17px;
+  left: 0;
+  display: block;
+  content: '';
+  width: 106px;
+  height: 106px;
+  background: #ffe400;
+  border-radius: 100%;
+}
+
+.services-block__img {
+  z-index: 1;
+  margin-right: 20px;
+}
+
+.services-block__text {
+  z-index: 1;
+  color: #302783;
+  font-size: 26px;
+  max-width: 240px;
+}
 /*# sourceMappingURL=style.css.map */
