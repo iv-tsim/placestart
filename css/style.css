@@ -664,7 +664,7 @@ input[type=number]::-webkit-outer-spin-button {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   background: #ffe400;
-  width: 600px;
+  width: 100%;
   height: 290px;
 }
 
@@ -739,7 +739,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .feedback {
-  position: absolute;
+  position: fixed;
   top: 227px;
   right: 0;
   -webkit-transition: all ease-in-out .3s;
@@ -749,6 +749,7 @@ input[type=number]::-webkit-outer-spin-button {
   background: #302783;
   border-radius: 10px 0 0 10px;
   padding: 20px 20px 20px 15px;
+  z-index: 2;
 }
 
 .feedback-item {
@@ -787,6 +788,12 @@ input[type=number]::-webkit-outer-spin-button {
 .feedback:hover {
   -webkit-transform: translateX(0);
           transform: translateX(0);
+}
+
+@media (max-width: 1200px) {
+  .feedback {
+    display: none;
+  }
 }
 
 .modal {
